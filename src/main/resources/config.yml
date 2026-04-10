@@ -1,0 +1,94 @@
+defaults:
+  reason: "Sem motivo"
+
+menu:
+  default-reason: "Punição via menu"
+
+# Tela ao tentar entrar banido (estilo redes grandes / MUSH): várias linhas.
+# Placeholders: %player% %reason% %staff% %discord% %banTypeLine% %expiresLine%
+ban-screen-discord: "discord.gg/artixdevelopment"
+
+ban-screen-kind-ip: "&cTipo: &fBanimento por IP"
+ban-screen-kind-permanent: "&cTipo: &fBanimento permanente"
+ban-screen-kind-temp: "&eTipo: &fBanimento temporário"
+
+ban-screen-line-expires-permanent: "&7Duração: &fPermanente"
+ban-screen-line-expires-temp: "&7Expira em: &f%time%"
+
+ban-screen-lines:
+  - "&b&l「ARTIXPUNISH」"
+  - "&cO Jogador &4%player% &cfoi banido de nossa Network."
+  - "&cMotivo &7» &b%reason%"
+  - "&cStaff &7» &6%staff%"
+  - "%banTypeLine%"
+  - "%expiresLine%"
+  - "&9Discord &7» &b%discord%"
+  - "&eDúvidas e apelos pelo Discord."
+
+# Mensagens com & para cores. Placeholders: %player%, %reason%, %staff%, etc.
+
+error-no-permission: "&cVocê não tem permissão."
+error-console: "&cApenas jogadores podem usar este comando."
+error-player-unknown: "&cJogador &f%player% &cnão encontrado."
+error-not-online: "&cO jogador &f%player% &cnão está online."
+error-self: "&cVocê não pode fazer isso em si mesmo."
+error-duration: "&cDuração inválida. Use algo como &f7d &c, &f12h &c, &f30m &c, &f2w &c(semanas)."
+error-ip-invalid: "&cIP inválido."
+
+usage-ban: "&eUso: &f/ban <jogador> [motivo]"
+usage-tempban: "&eUso: &f/tempban <jogador> <duração> [motivo] &7(ex: 7d, 12h, 30m)"
+usage-unban: "&eUso: &f/unban <jogador>"
+usage-kick: "&eUso: &f/kick <jogador> [motivo]"
+usage-mute: "&eUso: &f/mute <jogador> [motivo]"
+usage-tempmute: "&eUso: &f/tempmute <jogador> <duração> [motivo]"
+usage-unmute: "&eUso: &f/unmute <jogador>"
+usage-warn: "&eUso: &f/warn <jogador> [motivo]"
+usage-clearwarns: "&eUso: &f/clearwarns <jogador>"
+usage-historico: "&eUso: &f/historico <jogador>"
+usage-ipban: "&eUso: &f/ipban <ip> [motivo]"
+usage-unbanip: "&eUso: &f/unbanip <ip>"
+usage-artixpunish: "&eUso: &f/artixpunish reload"
+
+ban-screen: "&c&lVocê está banido deste servidor.\n&7Motivo: &f%reason%\n&7Por: &f%staff%\n%expiresLine%"
+ban-screen-permanent: "&7Duração: &fPermanente"
+ban-screen-expires: "&7Expira em: &f%time%"
+
+kick-ban: "&cBanido.\n&7Motivo: &f%reason%\n&7Por: &f%staff%"
+kick-tempban: "&cBanido temporariamente.\n&7Motivo: &f%reason%\n&7Por: &f%staff%\n&7Expira: &f%expires%"
+kick-generic: "&cExpulso.\n&7Motivo: &f%reason%\n&7Por: &f%staff%"
+kick-ipban: "&cSeu IP foi banido.\n&7Motivo: &f%reason%\n&7Por: &f%staff%"
+
+mute-chat-denied-permanent: "&cVocê está mutado permanentemente. &7Motivo: &f%reason% &7| &7Por: &f%staff%"
+mute-chat-denied-temp: "&cVocê está mutado até &f%expires%&c. &7Motivo: &f%reason% &7| &7Por: &f%staff%"
+
+ban-applied: "&aBan permanente aplicado a &f%player%&a. Motivo: &f%reason%"
+tempban-applied: "&aBan temporário aplicado a &f%player%&a (&f%duration%&a). Motivo: &f%reason%"
+unban-ok: "&aBan removido de &f%player%&a."
+unban-not-found: "&cNão há ban ativo para &f%player%&c."
+
+kick-applied: "&aJogador &f%player% &aexpulso. Motivo: &f%reason%"
+
+mute-applied: "&aMute permanente em &f%player%&a. Motivo: &f%reason%"
+tempmute-applied: "&aMute temporário em &f%player% &a(&f%duration%&a). Motivo: &f%reason%"
+unmute-ok: "&aMute removido de &f%player%&a."
+unmute-not-found: "&cNão há mute ativo para &f%player%&c."
+
+warn-applied: "&aAviso aplicado a &f%player%&a. Motivo: &f%reason% &7(&e%total% &7avisos)"
+warn-notify: "&eVocê recebeu um aviso. &7Motivo: &f%reason% &7| &7Por: &f%staff% &7| &7Total: &e%total%"
+
+clearwarns-ok: "&aAvisos removidos de &f%player%&a."
+clearwarns-none: "&cNenhum aviso registrado para &f%player%&c."
+
+historico-empty: "&cNenhum registro de punição para &f%player%&c."
+historico-header: "&6--- Histórico recente: &f%player% &6---"
+historico-line: "&7[&f%type%&7] &f%date% &7| &f%staff% &7| &f%reason%"
+historico-more: "&7(&o+%count% entradas não exibidas&r&7)"
+
+ipban-applied: "&aIP &f%ip% &abanido. Motivo: &f%reason%"
+unbanip-ok: "&aBan de IP removido: &f%ip%"
+unbanip-not-found: "&cNenhum ban de IP ativo para &f%ip%&c."
+
+reload-ok: "&aConfig e dados recarregados do disco."
+
+menu-reset-players: "&aForam removidos &f%count% &abanimento(s) de jogadores (UUID)."
+menu-reset-ip: "&aForam removidos &f%count% &abanimento(s) por IP."

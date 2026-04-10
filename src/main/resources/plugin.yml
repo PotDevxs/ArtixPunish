@@ -1,0 +1,62 @@
+name: ArtixPunish
+version: '${project.version}'
+main: dev.artix.artixpunish.ArtixPunish
+description: Sistema de punições (ban, mute, warn, kick, IP ban).
+author: Faastyzin
+
+permissions:
+  artixpunish.*:
+    description: Todas as permissões do ArtixPunish
+    default: op
+    children:
+      artixpunish.ban: true
+      artixpunish.tempban: true
+      artixpunish.unban: true
+      artixpunish.kick: true
+      artixpunish.mute: true
+      artixpunish.tempmute: true
+      artixpunish.unmute: true
+      artixpunish.warn: true
+      artixpunish.clearwarns: true
+      artixpunish.history: true
+      artixpunish.ipban: true
+      artixpunish.unbanip: true
+      artixpunish.reload: true
+      artixpunish.menu: true
+      artixpunish.menu.reset.players: true
+      artixpunish.menu.reset.ip: true
+  artixpunish.ban:
+    default: op
+  artixpunish.tempban:
+    default: op
+  artixpunish.unban:
+    default: op
+  artixpunish.kick:
+    default: op
+  artixpunish.mute:
+    default: op
+  artixpunish.tempmute:
+    default: op
+  artixpunish.unmute:
+    default: op
+  artixpunish.warn:
+    default: op
+  artixpunish.clearwarns:
+    default: op
+  artixpunish.history:
+    default: op
+  artixpunish.ipban:
+    default: op
+  artixpunish.unbanip:
+    default: op
+  artixpunish.reload:
+    default: op
+  artixpunish.menu:
+    description: Abrir menu de punições (/punishmenu)
+    default: op
+  artixpunish.menu.reset.players:
+    description: Limpar todos os bans de jogadores pelo menu
+    default: op
+  artixpunish.menu.reset.ip:
+    description: Limpar todos os bans de IP pelo menu
+    default: op
